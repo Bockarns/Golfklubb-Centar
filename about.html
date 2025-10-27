@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
-  <link rel="stylesheet" href="./styles/history.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Golfklubb Centar, Regionens populäraste golfdestination, Tävla, Njut och ha kul Tillsammans, Webbshop, Restaurang">
   <title>Om Golfklubb Centar</title>
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -20,8 +22,8 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
@@ -39,10 +41,10 @@
           </ul>
         </li>     
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#.html">Om klubben▾</a>
           <ul class="sub-nav">
-            <li><a href="about.html">Om oss</a></li>
+            <li class="current"><a href="about.html">Om oss</a></li>
             <li><a href="facilities.html">Banan och Facilititer</a></li>
             <li><a href="members.html">Medlemskap</a></li>
           </ul>
@@ -53,25 +55,27 @@
     </nav>
   </header>
 
-<section class="history-banner">
+<section class="banner">
+  <div class="banner-text">
   <h1>Om Golfklubb Centar</h1>
+</div>
 </section>
 
-<article class="about-us-box">
+<article class="welcome">
   <h2>Vilka är vi</h2>
   <div class="profile-container">
     <div class="profile">
-      <img src="bilder/ninos.jpg" alt="Ninos Bild">
+      <img src="bilder/about/ninos.jpg" alt="Ninos Bild" class="about-img hover-effect">
       <h3>Ninos Pito</h3>
       <p>Var den första att klara alla banor. Mera info kommer senare.</p>
     </div>
     <div class="profile">
-      <img src="bilder/jerome.png" alt="Jerome Bild">
+      <img src="bilder/about/jerome.png" alt="Jerome Bild" class="about-img hover-effect">
       <h3>Jerome Gordon-Bock</h3>
       <p>Föddes på golfbanan. Bodde på hål 8 tills han blev 18år, då flyttade han in i klubbhuset.</p>
     </div>
     <div class="profile">
-      <img src="bilder/saimonas.jpg" alt="Saimonas Bild">
+      <img src="bilder/about/saimonas.jpg" alt="Saimonas Bild" class="about-img hover-effect">
       <h3>Saimonas Klietkus</h3>
       <p>Fick ett hole in one när han var 5 år gammal. Mera info kommer senare.</p>
     </div>
@@ -79,45 +83,45 @@
 </article>
 
 <main class="history-goal-vision-container">
-  <article class="history-box">
-    <img src="bilder/golfhistory.jpg" alt="Golfklubbens historia">
+  <article class="history-box hover-effect">
+    <img src="bilder/about/golfhistory.jpg" alt="Golfklubbens historia">
     <h2>Vår Historia</h2>
     <ul>
-      <li>1900-1920: De första slagen
+      <li><span class="bold">1900-1920: De första slagen</span>
         <ul>
           <li>Klubben grundades i början av 1900-talet, när golf började växa fram som sport i Sverige. Ett litet gäng entusiaster samlades för att skapa en bana,
              och med enkel utrustning och mycket engagemang lades grunden för det som skulle bli vår klubb.</li>
         </ul>
       </li>
 
-      <li>1920-1950: Tillväxt och gemenskap
+      <li><span class="bold">1920-1950: Tillväxt och gemenskap</span>
         <ul>
           <li>Under mellankrigstiden växte klubben sakta men säkert. Medlemmarna byggde ut banan,
              arrangerade de första tävlingarna och lade stort fokus på att göra golf tillgängligt för fler.</li>
         </ul>
       </li>
 
-      <li>1950-1980: En modernare klubb
+      <li><span class="bold">1950-1980: En modernare klubb</span>
         <ul>
           <li>Efter andra världskriget ökade intresset för golf markant. Klubben investerade i bättre utrustning, nya greener och klubbhus.
              Det var under den här tiden många av våra traditioner, som tävlingsveckan och klubbmästerskapet, etablerades.</li>
         </ul>
       </li>
       
-      <li>1980-2000: Från lokal till regional känd
+      <li><span class="bold">1980-2000: Från lokal till regional känd</span>
         <ul>
           <li>Golfboomen på 80- och 90-talet gjorde att klubben växte kraftigt.
              Nya medlemmar strömmade in, juniorverksamheten blomstrade och vi började arrangera större tävlingar som lockade spelare från hela regionen.</li>
         </ul>
       </li>
 
-      <li>2000-2020: Teknik och utveckling
+      <li><span class="bold">2000-2020: Teknik och utveckling</span>
         <ul>
           <li>Vi anpassade oss till en ny tid. Med digital bokning, modern utrustning och förbättrade träningsmöjligheter höjdes spelupplevelsen för både nya och gamla medlemmar.</li>
         </ul>
       </li>
 
-      <li>2020-Idag: En klubb för framtiden
+      <li><span class="bold">2020-Idag: En klubb för framtiden</span>
         <ul>
           <li>Klubben leds idag av tre eldsjälar: Ninos Pito, Jerome Bock och Saimonas Klietkus. Tillsammans har de fört klubben in i en ny era, med investeringar i nya golfcart, uppgraderad utrustning, spännande events och en starkare gemenskap än någonsin. De tre har med passion och engagemang skapat en mötesplats där tradition möter framtid, och där varje medlem känner sig hemma.</li>
         </ul>
@@ -126,8 +130,8 @@
     </ul>
   </article>
 
-  <article class="history-box">
-    <img src="bilder/golffuture.jpg" alt="Vision och mål">
+  <article class="history-box hover-effect">
+    <img src="bilder/about/golffuture.jpg" alt="Vision och mål">
     <h2>Vår Vision</h2>
     <p>
       Vi vill vara mer än en golfklubb, vi vill vara en levande mötesplats där tradition och framtid går hand i hand. Vår vision är att skapa en klubb där varje medlem, oavsett ålder eller erfarenhet, känner sig välkommen, sedd och delaktig.
@@ -140,14 +144,14 @@
     </p>
     <h2>Vår Mål</h2>
     <ul>
-      <li>För banan:
+      <li><span class="bold">För banan:</span>
         <ul>
           <li>Fortsätta utveckla och underhålla en bana av högsta kvalitet.</li>
           <li>Arbeta hållbart för att värna om naturen och miljön runt klubben.</li>
         </ul>
       </li>
 
-      <li>För medlemmarna:
+      <li><span class="bold">För medlemmarna:</span>
         <ul>
           <li>Skapa en inkluderande och välkomnande miljö för alla åldrar och nivåer.</li>
           <li>Erbjuda utbildning, träning och stöd för att varje medlem ska kunna utvecklas i sitt spel.</li>
@@ -155,7 +159,7 @@
         </ul>
       </li>
 
-      <li>För framtiden:
+      <li><span class="bold">För framtiden:</span>
         <ul>
           <li>Satsa på modern teknik och utrustning för att förbättra spelupplevelsen.</li>
           <li>Ständigt växa och attrahera nya medlemmar utan att tappa vår identitet.</li>
@@ -186,25 +190,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
-        <li><a href="about.html">Om oss</a></li>
+        <li><a href="competition.html">Tävlingar</a></li>
+        <li><a href="event.html">Evenemang</a></li>
         <li><a href="login.html">Inloggning</a></li>
-        <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

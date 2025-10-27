@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tävlingar</title>
+  <title>Tävlingar | Tävla tillsammans</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="styles/competition.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Tävlingar, Resultat, Tävla tillsammans">
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -19,13 +22,13 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#">Event▾</a>
           <ul class="sub-nav">
-            <li><a href="competition.html">Tävlingar</a></li>
+            <li class="current"><a href="competition.html">Tävlingar</a></li>
             <li><a href="event.html">Evenemang</a></li>
           </ul>
         </li>    
@@ -51,6 +54,667 @@
       </ul>
     </nav>
   </header>
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Tävlingar</h1>
+      <h2>Tävla tillsammans</h2>
+    </div>
+  </section>
+  <section class="welcome">
+    <h2>Välkommen till våra tävlingar på Golfklubb Centar!</h2>
+    <p>
+      Hos oss på Golfklubb Centar är varje säsong en chans att utmana sig själv, ha roligt och uppleva den unika gemenskapen som bara golfen kan ge.
+      Våra tävlingar pågår året runt, från spännande juniorcuper till prestigefyllda mästerskap och familjetävlingar fyllda med glädje.
+    </p>
+    <p>
+      Våra tävlingar pågår året runt, från spännande juniorcuper till prestigefyllda mästerskap och familjetävlingar fyllda med glädje.
+    </p>
+    <p>
+      Oavsett om du är nybörjare, erfaren spelare eller bara vill njuta av stämningen på banan, finns det en tävling för dig.
+    </p>
+  </section>
+
+  <main class="tournaments">
+    <div class="junior">
+      <img src="/bilder/competition/competitions-juniors.jpg" alt="picture of kids playing golf" class="comp-img hover-effect">
+      <h3>Junior Cup (U18)</h3>
+      <p>
+        Junior Cup är framtidens golftävling! Här får våra unga medlemmar chansen att testa sina färdigheter och växa både som spelare och lagkamrater.
+      </p>
+      <p>
+        Fokus ligger på lärande, gemenskap och sportsligt uppträdande, med roliga priser och massor av pepp längs vägen.
+      </p>
+      <input type="checkbox" name="score-toggle1" id="score-toggle1">
+      <label for="score-toggle1" class="score-btn">
+      <span class="hidden-btn btn">Senaste resultat</span>
+      </label>
+      <div class="drop-result junior-result">
+        <h3>Junior Cup 2025 - Top 10</h3>
+        <p>Resultat från senaste tävlingar</p>
+        <table>
+          <tr>
+            <th>Placering</th>
+            <th>Namn och Efternamn</th>
+            <th>Pöang</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Maria Anders</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Francisco Chang</td>
+            <td>87</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Roland Mendel</td>
+            <td>83</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Helen Bennett</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Yoshi Tannamuri</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Giovanni Rovelli</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Erik Johansson</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Anna Lundgren</td>
+            <td>68</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Johan Andersson</td>
+            <td>66</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Sara Nilsson</td>
+            <td>65</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="senior">
+      <img src="/bilder/competition/competitions-seniors.jpg" alt="picture of seniors playing golf" class="comp-img hover-effect">
+      <h3>Senior Open (18-59 år)</h3>
+      <p>
+        Senior Open är klubbens mest populära tävling, där passionen för golf möter tävlingsinstinkt.
+      </p>
+      <p>
+        Här samlas både rutinerade spelare och nya entusiaster för en utmanande 18-hålsrunda fylld med spänning.
+        Prestige, vänskap och en chans att bli klubbens nästa mästare står på spel!
+      </p>
+      <input type="checkbox" name="score-toggle2" id="score-toggle2">
+      <label for="score-toggle2" class="score-btn">
+        <span class="hidden-btn btn">Senaste resultat</span>
+      </label>
+      <div class="drop-result senior-result">
+        <h3>Senior Open 2025 - Top 10</h3>
+        <p>Resultat från senaste tävlingar</p>
+        <table>
+          <tr>
+            <th>Placering</th>
+            <th>Namn och Efternamn</th>
+            <th>Pöang</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Fredrik Bergström</td>
+            <td>98</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Elin Svensson</td>
+            <td>97</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Oscar Persson</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Lisa Karlsson</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>David Holm</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Sofia Larsson</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Henrik Lindberg</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Emma Norberg</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Alexander Blom</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Clara Björk</td>
+            <td>70</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="veteran">
+      <img src="/bilder/competition/competitions-veteren.jpg" alt="picture of veterans playing golf" class="comp-img hover-effect">
+      <h3>Veteran Challenge (60+)</h3>
+      <p>
+        Erfarenhet möter elegans i Veteran Challenge.
+      </p>
+      <p>
+        Denna tävling hyllar våra mest erfarna golfare, spelare som vet att det handlar lika mycket om strategi som om styrka.
+      </p>
+      <p>
+        En avslappnad men prestigefylld dag där precision, taktik och gemenskap står i centrum.
+      </p>
+      <input type="checkbox" name="score-toggle3" id="score-toggle3">
+      <label for="score-toggle3" class="score-btn">
+      <span class="hidden-btn btn">Senaste resultat</span>
+      </label>
+     <div class="drop-result veteran-result">
+      <h3>Veteran Challenge 2025 - Top 10</h3>
+      <p>Resultat från senaste tävlingar</p>
+      <table>
+        <tr>
+          <th>Placering</th>
+          <th>Namn och Efternamn</th>
+          <th>Pöang</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Patrik Nyström</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Frida Dahl</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Simon Åkesson</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Julia Berg</td>
+          <td>71</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Tobias Sandgren</td>
+          <td>67</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Malin Ek</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Andreas Sjöberg</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Ida Hellman</td>
+          <td>58</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Niklas Nygren</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Evelina Strand</td>
+          <td>51</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </main>
+
+  <section class="result">
+    <div class="big-result junior-result">
+      <h3>Junior Cup 2025 - Top 10</h3>
+      <p>Resultat från senaste tävlingar</p>
+      <table>
+        <tr>
+          <th>Placering</th>
+          <th>Namn och Efternamn</th>
+          <th>Pöang</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Maria Anders</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Francisco Chang</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Roland Mendel</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Helen Bennett</td>
+          <td>79</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Yoshi Tannamuri</td>
+          <td>76</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Giovanni Rovelli</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Erik Johansson</td>
+          <td>71</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Anna Lundgren</td>
+          <td>68</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Johan Andersson</td>
+          <td>66</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Sara Nilsson</td>
+          <td>65</td>
+        </tr>
+      </table>
+    </div>
+    <div class="big-result senior-result">
+      <h3>Senior Open 2025 - Top 10</h3>
+      <p>Resultat från senaste tävlingar</p>
+      <table>
+        <tr>
+          <th>Placering</th>
+          <th>Namn och Efternamn</th>
+          <th>Pöang</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Fredrik Bergström</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nahrin Pito</td>
+          <td>97</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Oscar Persson</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Neraida Pito</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>David Holm</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Sofia Larsson</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Henrik Lindberg</td>
+          <td>79</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Emma Norberg</td>
+          <td>76</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Alexander Blom</td>
+          <td>73</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Clara Björk</td>
+          <td>70</td>
+        </tr>
+      </table>
+    </div>
+    <div class="big-result veteran-result">
+      <h3>Veteran Challenge 2025 - Top 10</h3>
+      <p>Resultat från senaste tävlingar</p>
+      <table>
+        <tr>
+          <th>Placering</th>
+          <th>Namn och Efternamn</th>
+          <th>Pöang</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Patrik Nyström</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Frida Dahl</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Simon Åkesson</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Julia Berg</td>
+          <td>71</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Tobias Sandgren</td>
+          <td>67</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Malin Ek</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Andreas Sjöberg</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Ida Hellman</td>
+          <td>58</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Niklas Nygren</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Evelina Strand</td>
+          <td>51</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="important-information">
+    <div class="calendar">
+      <h3>Tävlingskalender</h3>
+      <table>
+        <tr>
+          <th></th>
+          <th>Junior Cup</th>
+          <th>Senior Open</th>
+          <th>Veteran Challenge</th>
+        </tr>
+        <tr>
+          <th scope="row">Vårstart</th>
+          <td>10 Ferbrauri 2026</td>
+          <td>15 Ferbrauri 2026</td>
+          <td>23 Ferbrauri 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Parkbanan</td>
+          <td>Skogsslingan</td>
+          <td>Linksbanan</td>
+        </tr>
+        <tr>
+          <th scope="row">Sommarslag</th>
+          <td>21 Juni 2026</td>
+          <td>28 Juni 2026</td>
+          <td>6 Juli 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Skogsslingan</td>
+          <td>Linksbanan</td>
+          <td>Parkbanan</td>
+        </tr>
+        <tr>
+          <th scope="row">Höstavslutning</th>
+          <td>1 September 2026</td>
+          <td>7 September 2026</td>
+          <td>13 September 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Linksbanan</td>
+          <td>Parkbanan</td>
+          <td>Skogsslingan</td>
+        </tr>
+      </table>
+    </div>
+        <div class="small-calendar calendar">
+      <h3>Tävlingskalender</h3>
+      <table>
+        <tr>
+          <th colspan="2">Junior Cup</th>
+        </tr>
+        <tr>
+          <th scope="row">Vårstart</th>
+          <td>10 Ferbrauri 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Parkbanan</td>
+        </tr>
+        <tr>
+          <th scope="row">Sommarslag</th>
+          <td>21 Juni 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Skogsslingan</td>
+        </tr>
+        <tr>
+          <th scope="row">Höstavslutning</th>
+          <td>1 September 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Linksbanan</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th colspan="2">Senior Open</th>
+        </tr>
+        <tr>
+          <th scope="row">Vårstart</th>
+          <td>15 Ferbrauri 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Skogsslingan</td>
+        </tr>
+        <tr>
+          <th scope="row">Sommarslag</th>
+          <td>28 Juni 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Linksbanan</td>
+        </tr>
+        <tr>
+          <th scope="row">Höstavslutning</th>
+          <td>7 September 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Parkbanan</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th colspan="2">Veteran Challenge</th>
+        </tr>
+        <tr>
+          <th scope="row">Vårstart</th>
+          <td>23 Ferbrauri 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Linksbanan</td>
+        </tr>
+        <tr>
+          <th scope="row">Sommarslag</th>
+          <td>6 Juli 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Parkbanan</td>
+        </tr>
+        <tr>
+          <th scope="row">Höstavslutning</th>
+          <td>13 September 2026</td>
+        </tr>
+        <tr>
+          <th scope="row">Bana</th>
+          <td>Skogsslingan</td>
+        </tr>
+      </table>
+    </div>
+
+    
+    <div class="list">
+      <h3>Frågor och svar!</h3>
+        <div class="accordion-menu">
+          
+          <div class="item" id="item1">
+            <a href="#item1" class="title">
+              <span>Hur anmäler jag mig till en tävling?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">
+              Du kan använda formulär under för att anmäla dig eller kontakta oss via mail eller telefon.
+            </p>
+          </div>
+          <div class="item" id="item2">
+            <a href="#item2" class="title">
+              <span>Hur blir jag medlem i Golfklubb Centar?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Du kan ansöka om medlemskap direkt via vår hemsida under fliken Logga in sedan Skapa Medlemskap.
+              Där väljer du medlemsnivå, fyller i dina uppgifter och betalar din avgift, sen är du redo att spela!.</p>
+          </div>
+          <div class="item" id="item3">
+            <a href="#item3" class="title">
+              <span>Kan jag äta på klubben även om jag inte spelar?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Absolut! Vår restaurang välkomnar alla gäster, både spelare och besökare.
+              Du kan njuta av frukost, lunch eller à la carte med utsikt över banan.</p>
+          </div>
+          <div class="item" id="item4">
+            <a href="#item4" class="title">
+              <span>Vad händer om en tävling ställs in på grund av väder?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Om vädret gör att tävlingen inte kan genomföras, meddelas alla deltagare via e-post och hemsidan.
+              Tävlingen flyttas då till ett nytt datum så snart som möjligt.</p>
+          </div>
+          <div class="item" id="item5">
+            <a href="#item5" class="title">
+              <span>Har ni särskilda evenemang för familjer?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Ja, vi arrangerar familjedagar, grillkvällar och prova-på-golf för både barn och vuxna.
+              Det är ett perfekt tillfälle att umgås, lära sig mer om golf och njuta av gemenskapen i klubben.
+              <a href="event.html"><span class="bold"> Läs mer om vad erbjuder vi för familjer.</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="form-container">
+      <fieldset class="form">
+        <h3>Ansökan för kommande Tävlingar</h3>
+        <form action="./bookingconfirm.html" method="get" class="form" target="_blank">
+        <label for="name">Namn och Efternamn</label>
+        <input type="text" name="name" id="name" placeholder="ex: Jon Snow" required>
+
+        <label for="email">E-postadress</label>
+        <input type="email" name="email" id="email" placeholder="ex: Jonsnow1@gmail.com" required>
+
+        <label for="tournaments">Välj Tävlingsnivå:</label>
+        <select name="tournaments" id="tournaments"  >
+          <option value="Junior Cup" class="tournaments">Junior Cup</option>
+          <option value="Senior Open" class="tournaments">Senior Open</option>
+          <option value="Veteran Challenge" class="tournaments">Veteran Challenge</option>
+        </select>
+
+        <label for="time">Välj Starttid:</label>
+        <select name="time" id="time">
+          <option value="Vårstart" class="time">Vårstart</option>
+          <option value="Sommarslag" class="time">Sommarslag</option>
+          <option value="Höstavslutning" class="time">Höstavslutning</option>
+        </select>
+
+        <label for="comments">Övriga Information:</label>
+        <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+
+        <button type="submit" class="btn">Skicka Ansökan</button>
+        </form>
+      </fieldset>
+  </section>
+
   <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
@@ -72,25 +736,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
+        <li><a href="facilities.html">Banor</a></li>
         <li><a href="about.html">Om oss</a></li>
         <li><a href="login.html">Inloggning</a></li>
-        <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

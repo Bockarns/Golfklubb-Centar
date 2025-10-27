@@ -1,10 +1,13 @@
 /* Css general for coloring and fonts for all sites */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libertinus+Keyboard&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tirra:wght@400;500;600;700;800;900&display=swap');
+
 :root {
   --Bgreen: rgb(137, 172, 70);
   --Boxwhite: #f1f1e7;
+  --Bkggreen : #B0DB9C;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +15,102 @@
 }
 
 body {
-  background: var(--Bgreen);
+  background: var(--Bkggreen);
   max-width: 100%;
   width: 100vw;
   height: 100vh;
   font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main, main > div, main > article, main > section, main > aside {
+main, main > div, main > article, main > section, main > aside, .welcome {
   border-radius: 8px;
 }
 
+main > div, main > article, main > section, main > aside, .welcome {
+  border: 1px solid black;
+}
+
+p{
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
+
+/* banner */
+
+.banner{
+  width: 100%;
+  height: 550px; /* adjust */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  padding-top: 2em;
+  text-align: center;
+  position: relative;
+}
+
+.banner-text{
+  margin-top: 100px;
+  background: rgb(242, 242, 233, 0.6);
+  border-radius: 8px;
+  font-family:'Poppins';
+  padding: 5px;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+}
+
+
+/* Button */
+.btn {
+  background-color: var(--Bgreen);
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+  height: 45px;
+  grid-column: span 2;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #5c7d36;
+  transform: scale(1.05);
+}
+.bold{
+  font-weight: bold;
+}
+
+
+/* Hover effect on imgs and divs */
+
+/* .hover-effect:hover {
+  border-radius: 8px;
+  box-shadow: 0 0 10px 5px var(--Bgreen);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+} */
+
 /* #footer */
+
 .footer-container{
   background-color: var(--Boxwhite);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2em;
-  /* background: url('footer.jpg')no-repeat center center/cover ; */
 }
 
 .skapare a{
@@ -81,16 +162,23 @@ main, main > div, main > article, main > section, main > aside {
   width: 25px;
 }
 
+input:focus::placeholder{
+    color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
+}
+
+/* screensizes */
+
 @media only screen and (max-width: 1200px) {
   .footer-container{
-    background-color: var(--Bgreen);
-  }    
+    background-color: var(--Bkggreen);
+  }   
 }
 
 @media only screen and (max-width: 992px) {
   main, main > div, main > article, main > section, main > aside {
   border-radius: 0;
   }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -103,13 +191,19 @@ main, main > div, main > article, main > section, main > aside {
 }
 
 @media only screen and (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+  .banner-text h2 {
+    font-size: 1.5rem;
+  }
   .footer-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 50px;
     text-align: center;
     justify-items: center;
     row-gap: 2em;
-  }
+  } 
 
   .kontakta-oss{
     grid-column: span 2;

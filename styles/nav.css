@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+.header {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  background: rgba(176, 219, 156, 0.7);
+  padding-top: 25px;
+}
 
-body{
-  background-color: var(--Bgreen);
-}
-.nav-container{
-  margin: 20px;
-}
+
 .main-nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  background: var(--Bgreen);
+  /* background: rgb(176, 219, 156, 0.6); */
   /* background: transparent; */
   font-size: 1.2rem;
-  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
@@ -37,14 +38,23 @@ body{
   transform: scale(1.05);
   border-radius: 5px;
 }
+.current {
+  background: rgba(136, 243, 136, 0.5);
+  border-radius: 5px;
+}
 
-ul > li:first-child{
+.menu > li:first-child{
   color: rgb(0, 0, 0);
   margin-right: auto;
 }
 
-ul > li:last-child{
+.menu > li:last-child{
   margin-left: auto;
+}
+
+.menu > li:last-child{
+  margin-left: auto;
+  padding-right: 15px;
 }
 
 .main-nav ul li a[href="login.html"] {
@@ -57,12 +67,12 @@ ul > li:last-child{
   position: absolute;
   top: 100%; /* below parent */
   left: 0;
-  background: var(--Bgreen);
+  background: rgba(176, 219, 156, 0.9);
   list-style: none;
   margin: 0;
   padding: 0;
   min-width: 150px;
-  border: 1px solid #ccc;
+  border: 1px solid #47814c;
   z-index: 1000;
 }
 
@@ -84,8 +94,13 @@ ul > li:last-child{
 
 .nav-logo{
   position: absolute;
-  width: 100px;
-  margin: -15px;
+  width: 200px;
+  margin: -3px 0 0 0;
+  padding-left: 15px;
+}
+
+.logo-holder {
+  width: 175px;
 }
 
 /* Hamburger-Meny */
@@ -115,6 +130,13 @@ input[name='menu-toggle']:checked ~ label .bottom {
 /* Screen sizes */
 
 @media screen and (max-width: 992px){
+  /* .header{
+    position: relative;
+  } */
+
+  /* .nav-container {
+    margin: 0;
+  } */
 
   .main-nav {
     display:flex;
@@ -126,13 +148,14 @@ input[name='menu-toggle']:checked ~ label .bottom {
     display: flex;
     flex-direction: column;
     right: 0;
-    top: 10px;
+    top: 35px;
     left: 0;
     gap: 0.5rem;
     width: 100%;
     border-top: none;
     border-bottom: none;
     position: relative;
+    background: rgb(176, 219, 156);
   }
 
   .sub-nav {
@@ -140,12 +163,11 @@ input[name='menu-toggle']:checked ~ label .bottom {
     position: absolute;
     top: -50%; /* below parent 100%*/
     left: 100%;
-    background: var(--Bgreen);
     list-style: none;
     margin: 0;
     padding: 0;
     min-width: 150px;
-    border: 1px solid #ccc;
+    border: 1px solid #47814c;
     z-index: 1000;
   }
 
@@ -167,6 +189,7 @@ input[name='menu-toggle']:checked ~ label .bottom {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
+    margin-right: 15px;
   }
 
   .hamburger-menu .bar {
@@ -182,5 +205,18 @@ input[name='menu-toggle']:checked ~ label .bottom {
 @media only screen and (max-width: 600px) {
   .menu {
     align-items: center;
+  }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+  .main-nav > ul { 
+    align-items: flex-start;
+  }  
+  .nav-logo{
+    position: absolute;
+    width: 150px;
+    margin: 0 0 0 0;
   }
 }

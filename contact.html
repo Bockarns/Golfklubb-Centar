@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakta oss</title>
+  <title>Kontakta oss på Golfklubb Centar</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Golfklubb Centar, Karta, Kontakta oss, Tävla, Njut och ha kul Tillsammans, Webbshop, Restaurang">
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -20,8 +22,9 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
+        <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
           <ul class="sub-nav">
@@ -29,6 +32,7 @@
             <li><a href="event.html">Evenemang</a></li>
           </ul>
         </li>    
+        <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#.html">Butik▾</a>
           <ul class="sub-nav">
@@ -36,6 +40,7 @@
             <li><a href="shop.html">Shop</a></li>
           </ul>
         </li>     
+        <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#.html">Om klubben▾</a>
           <ul class="sub-nav">
@@ -44,12 +49,11 @@
             <li><a href="members.html">Medlemskap</a></li>
           </ul>
         </li>
-        <li><a href="contact.html">Kontakta oss</a></li>
+        <li class="current"><a href="contact.html">Kontakta oss</a></li>
         <li><a href="login.html">Logga in</a></li>
       </ul>
     </nav>
   </header>
-
   <section class="banner">
     <div class="banner-text">
       <h1>Kontakt och besök</h1>
@@ -66,28 +70,28 @@
               <span>Hur kontaktar jag barnskötaren?</span>
               <i class="icon"></i>
             </a>
-            <p class="text">Du kan kontakta Jerome Gordon Bock, på telefonnummret 017-033 57 03 Detta gäller 08:00-17:00</p>
+            <p class="text">Du kan kontakta Jerome Gordon Bock, på telefonnummret <span class="bold">017-033 57 03</span> Detta gäller <span class="bold">08:00-17:00</span></p>
           </div>
           <div class="item" id="item2">
             <a href="#item2" class="title">
               <span>Om jag har ett problem i restaurangen?</span>
               <i class="icon"></i>
             </a>
-            <p class="text">Vänligen kontakta vår restaurangchef Ninos Pito, på telefonnummret 017-033 58 03 eller via mejl på ninosrestaurang@golfcentar.se</p>
+            <p class="text">Vänligen kontakta vår restaurangchef Ninos Pito, på telefonnummret <span class="bold">017-033 58 03</span> eller via mejl på <span class="bold">ninosrestaurang@golfcentar.se</span></p>
           </div>
           <div class="item" id="item3">
             <a href="#item3" class="title">
               <span>Vad gör jag om jag har ett problem med en arbetare?</span>
               <i class="icon"></i>
             </a>
-            <p class="text">Välkommen att kontakta personalchefen Saimonas Klietkus, på telefonnummret 017-333 69 03 Detta gäller 09:00-18:00</p>
+            <p class="text">Välkommen att kontakta personalchefen Saimonas Klietkus, på telefonnummret <span class="bold">017-333 69 03</span> Detta gäller <span class="bold">09:00-18:00</span></p>
           </div>
           <div class="item" id="item4">
             <a href="#item4" class="title">
               <span>Jag vill sponsra er, hur gör jag det?</span>
               <i class="icon"></i>
             </a>
-            <p class="text">Om man önskar att sponsra oss, vänligen vända er mot vår marketing team via mejl centarmarketing@golfcentar.se</p>
+            <p class="text">Om man önskar att sponsra oss, vänligen vända er mot vår marketing team via mejl <span class="bold">centarmarketing@golfcentar.se</span></p>
           </div>
         </div>
       </div>
@@ -95,38 +99,37 @@
 
     <section class="contact-container">
       <div class="map-section">
-        <iframe 
+        <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.4739373131753!2d14.287979076450228!3d57.78954747396332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465a73ad9e6765ab%3A0xa0b7c529b41c70a9!2sDatorgatan%206%2C%20561%2033%20Huskvarna!5e0!3m2!1ssv!2sse!4v1716050000000!5m2!1ssv!2sse" 
-          width="100%" 
           height="450" 
+          title="Map"
           style="border:0;" 
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
           <div class="contact-info">
-        <div>
-          <h3>Adress</h3>
-          <p>Datorgatan 6<br>561 33 Huskvarna</p>
-        </div>
-        <div>
-          <h3>Telefon</h3>
-          <p>0140-44 45 10</p>
-        </div>
-        <div>
-          <h3>E-post</h3>
-          <p>info@tucsweden.se</p>
-        </div>
-        <div>
-          <h3>Öppettider</h3>
-          <ul>
-            <li>Mån–Fre: 08:00–18:00</li>
-            <li>Lör: 09:00–15:00</li>
-            <li>Sön: Stängt</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+            <div>
+              <h3>Adress</h3>
+              <p>Datorgatan 6<br>561 33 Huskvarna</p>
+            </div>
+            <div>
+              <h3>Telefon</h3>
+              <p>0140-44 45 10</p>
+            </div>
+            <div>
+              <h3>E-post</h3>
+              <p>info@tucsweden.se</p>
+            </div>
+            <div>
+              <h3>Öppettider</h3>
+              <ul>
+                <li>Mån-Fre: 08:00-18:00</li>
+                <li>Lör: 09:00-15:00</li>
+                <li>Sön: Stängt</li>
+              </ul>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -148,8 +151,57 @@
       </div>
     </aside>
   </main>
+  <section class="feedback-container">
+      <h3>Senaste feedbacks</h3>
+      <div class="feedback">
+      <div class="feedback1">
+        <div class="img">
+          <img src="/bilder/harry.png" alt="profile">
+        </div>
+        <div class="quote">
+          <p>“Jag försökte använda sidan med min trollstav, men den laddade ändå snabbare än Hogwarts Express! 10/10, magiskt användarvänlig.” ⚡</p>
+          <p><span class="bold">Harry Potter</span></p>
+          <p><span class="bold">Quidditch spelare</span></p>
+        </div>
+      </div>
 
- <footer class="footer-container">
+      <div class="feedback2">
+        <div class="img">
+          <img src="/bilder/iron-man.png" alt="profile">
+        </div>
+        <div class="quote">
+          <p>“Jag försökte hacka din sida, men den var för säker. Jag antar att jag måste anställa dig.” 💻🔥</p>
+          <p><span class="bold">Iron Man</span></p>
+          <p><span class="bold">CEO of Stark Industry</span></p>
+        </div>
+
+      </div>
+      <div class="feedback3">
+        <div class="img">
+          <img src="/bilder/jack.png" alt="profile">
+        </div>
+        <div class="quote">
+          <p>“Jag hittade ingen skatt... men jag hittade något bättre — den här webbsidan!” 🏴‍☠️💰</p>
+          <p><span class="bold">Jack Sparrow</span></p>
+          <p><span class="bold">Captain of the Black Pearl</span></p>
+        </div>
+      </div>
+
+      <div class="feedback4">
+        <div class="img">
+          <img src="/bilder/Daenerys.png" alt="profile">
+        </div>
+        <div class="quote">
+          <p>“Drakarna godkänner. Eldig design och kunglig responsivitet.” 🔥👑</p>
+          <p><span class="bold">Daenerys Targaryen</span></p>
+          <p><span class="bold">Mother of dragons</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
       <ul>
@@ -170,25 +222,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
-        <li><a href="history.html">Klubbens Historia</a></li>
+        <li><a href="competition.html">Tävlingar</a></li>
+        <li><a href="event.html">Evenemang</a></li>
         <li><a href="login.html">Inloggning</a></li>
-        <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

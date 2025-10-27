@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .banner {
-  width: 100%;
-  height: 350px; /* adjust */
-  background: url('/bilder/male-golfer-holding-driver-while-standing-green-course.jpg') no-repeat center/cover;
-  color: rgb(5, 5, 5);
-  padding-top: 2em;
-  text-align: center;
+  background: url('/bilder/banners/login-banner.jpg') no-repeat center/cover;
 }
 .banner-text{
     background-color: white; /* gjorde detta för att texten var inte mycket läsbart på grund av banner. kan ändras sedan om det behövs*/
@@ -32,20 +21,19 @@
     flex: 30%;
     background-color: var(--Boxwhite);
 }
+.login-info p{
+  padding: 1rem;
+}
 .login-form{
     border-left: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
+    gap: 3rem;
     font-size: larger;
     flex: 70%;
     background-color: var(--Boxwhite);
-}
-.login-form > p{
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-bottom: 2rem;    
 }
 
 .login input:nth-of-type(1),
@@ -58,31 +46,54 @@
     padding: 0 0 0 20px;
     font-size:large;
 }
-.login input:nth-of-type(3) {
+/* .login input:nth-of-type(3) {
     width: 7em;
     height: 2em;
     box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
     background-color: green;
     cursor: pointer;
     font-size: large;
-}
-.login input:nth-of-type(3):hover{
-    transform: scale(1.05);
-}
-input:focus::placeholder{
-    color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
-}
+} */
+
 .login > p{
     cursor: pointer;
-    font-weight: bold;
     text-decoration: underline;
+    padding-top: 1rem;
 }
-
+#remember{
+  margin: 5px;
+  padding: 5px;
+}
 .skapa-konto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+/* .skapa-konto{
     background-color: rgb(148, 201, 141);
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
 }
 .skapa-konto:hover{
     transform: scale(1.05);
+} */
+@media screen and (max-width: 1200px) {
+  .login-container{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .login-container{
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form, .login-info {
+    padding: 5px;
+  }
 }

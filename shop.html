@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/shop.css">
-    
-    <title>Golfklubb Centar</title>
+    <link rel="icon" href="./bilder/logos/favicon.ico">
+    <meta name="description" lang="sv" content="Golf, Webbnshop, Kläder, Golfutrustning, Golftillbehör, Spela tillsammans">
+    <title>Centar Webbshop | Hitta dina nästa golfplagg här.</title>
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -21,8 +22,8 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
@@ -32,11 +33,11 @@
           </ul>
         </li>    
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#.html">Butik▾</a>
           <ul class="sub-nav">
             <li><a href="restaurant.html">Restaurang</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li class="current"><a href="shop.html">Shop</a></li>
           </ul>
         </li>     
         <!-- Dropdown -->
@@ -53,18 +54,20 @@
       </ul>
     </nav>
   </header>
-
 <section class="banner">
-  <h1>Välkommen till klubbshopen!</h1>
-  <p>Här hittar du allt du behöver för din golfupplevelse, från bollar och handskar till kläder och exklusiv merch med klubbens logga.<br> Utforska vårt sortiment och ta del av produkter som kombinerar kvalitet, stil och funktion.</p>
+    <div class="banner-text">
+        <h1>Centar's Webbshop</h1>
+        <p>Här hittar du allt du behöver för din golfupplevelse, från bollar och handskar till kläder och exklusiv merch med klubbens logga.<br> Utforska vårt sortiment och ta del av produkter som kombinerar kvalitet, stil och funktion.</p>
+  </div>
 </section>
 <main class="shop-container">
     <div class="shop-intro">
         <h1>Favoritprodukter</h1>
-        <p>Upptäck våra mest populära artiklar som medlemmarna älskar! Här hittar du utvalda produkter med hög <br> kvalitet och klubbkänsla, perfekta både på och utanför golfbanan.</p>
+        <p>Upptäck våra mest populära artiklar som medlemmarna älskar! Här hittar du utvalda produkter med hög <br>
+            kvalitet och klubbkänsla, perfekta både på och utanför golfbanan.</p>
     </div>         
         <div class="sorts">
-        <p>SORTERA EFTER:
+        <p><span class="bold"> SORTERA EFTER: </span>
         <select name="sizes">
                     <option value="size">Pris (Låg till hög)</option>
                     <option value="size">Pris (hög till låg)</option>
@@ -76,7 +79,7 @@
         </div>
         <div class="shop-content">
             <div class="product">
-                <img style="grid-area: img1" src="./bilder-shop/Tshirt1.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Tshirt1.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Tröja
                     <select name="sizes">
@@ -100,7 +103,7 @@
                 
             </div>
             <div class="product">
-                <img style="grid-area: img2" src="./bilder-shop/Tshirt2.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Tshirt2.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Tröja
                     <select name="sizes">
@@ -123,7 +126,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img3" src="./bilder-shop/Tshirt3.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Tshirt3.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Blå Tröja
                     <select name="sizes">
@@ -147,7 +150,7 @@
             </div>
         
             <div class="product">
-                <img style="grid-area: img4" src="./bilder-shop/Keps1.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Keps1.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Keps
                     <select name="sizes">
@@ -168,7 +171,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img5" src="./bilder-shop/Keps2.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Keps2.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Blå Keps
                     <select name="sizes">
@@ -191,7 +194,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img6" src="./bilder-shop/Keps3.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Keps3.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Keps
                     <select name="sizes">
@@ -212,7 +215,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img7" src="./bilder-shop/Handskar1.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Handskar1.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Golfhandskar
                     <select name="sizes">
@@ -233,7 +236,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img8" src="./bilder-shop/Handskar2.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Handskar2.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Golfhandskar
                     <select name="sizes">
@@ -254,7 +257,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img9" src="./bilder-shop/Handskar3.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Handskar3.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Grön Golfhandskar
                     <select name="sizes">
@@ -277,7 +280,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img10" src="./bilder-shop/7.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/7.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Brun Gymväska
                     <select name="sizes">
@@ -298,7 +301,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img11" src="./bilder-shop/8.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/8.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Gymväska
                     <select name="sizes">
@@ -319,7 +322,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img12" src="./bilder-shop/9.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/9.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Grön Gymväska
                     <select name="sizes">
@@ -340,7 +343,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img12" src="./bilder-shop/13.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/13.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Silver Termosmugg
                     <select name="sizes">
@@ -361,7 +364,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img12" src="./bilder-shop/14.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/14.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Termosmugg
                     <select name="sizes">
@@ -382,7 +385,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img12" src="./bilder-shop/15.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/15.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Brun Termosmugg
                     <select name="sizes">
@@ -403,7 +406,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img13" src="./bilder-shop/Flaska1.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Flaska1.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Silver Vattenflaska
                     <select name="sizes">
@@ -424,7 +427,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img13" src="./bilder-shop/Flaska2.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Flaska2.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Vattenflaska
                     <select name="sizes">
@@ -445,7 +448,7 @@
                 </div>  
             </div>
             <div class="product">
-                <img style="grid-area: img13" src="./bilder-shop/Flaska3.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/Flaska3.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Vattenflaska
                     <select name="sizes">
@@ -476,7 +479,7 @@
          Perfekt för dig som vill ha hög kvalitet till ett ännu bättre värde.</p>
     <div class="shop-content-horisontell">
             <div class="product">
-                <img src="./bilder-shop/16.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/16.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Shoppingväska
                     <select name="sizes">
@@ -499,7 +502,7 @@
                 
             </div>
             <div class="product">
-                <img src="./bilder-shop/17.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/17.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Shoppingväska
                     <select name="sizes">
@@ -521,7 +524,7 @@
                 </div>                  
             </div>
             <div class="product">
-                <img src="./bilder-shop/18.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/18.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Grön Shoppingväska
                     <select name="sizes">
@@ -544,7 +547,7 @@
                 </div>                                  
             </div>
             <div class="product">
-                <img src="./bilder-shop/4.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/4.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Mobilskal
                     <select name="sizes">
@@ -572,7 +575,7 @@
                 </div>                      
             </div>
             <div class="product">
-                <img src="./bilder-shop/5.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/5.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Mobilskal
                     <select name="sizes">
@@ -600,7 +603,7 @@
                 </div> 
             </div>
             <div class="product">
-                <img src="./bilder-shop/6.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/6.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Grön Mobilskal
                     <select name="sizes">
@@ -628,7 +631,7 @@
                 </div> 
             </div>
             <div class="product">
-                <img src="./bilder-shop/10.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/10.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Vit Kaffemugg
                     <select name="sizes">
@@ -651,7 +654,7 @@
                 </div>
             </div>
             <div class="product">
-                <img  src="./bilder-shop/11.png" alt="photos of produkts">
+                <img  src="./bilder/bilder-shop/11.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Svart Kaffemugg
                     <select name="sizes">
@@ -674,7 +677,7 @@
                 </div>
             </div>
             <div class="product">
-                <img  src="./bilder-shop/12.png" alt="photos of produkts">
+                <img  src="./bilder/bilder-shop/12.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Blå Kaffemugg
                     <select name="sizes">
@@ -697,7 +700,7 @@
                 </div>
             </div>
             <div class="product">
-                <img  src="./bilder-shop/Golfball.png" alt="photos of produkts">
+                <img  src="./bilder/bilder-shop/Golfball.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Golfball
                     <select name="sizes">
@@ -721,7 +724,7 @@
             </div>
             
             <div class="product">
-                <img src="./bilder-shop/vet-ej-vad-den-heter.png" alt="photos of produkts">
+                <img src="./bilder/bilder-shop/golfpeggar.png" alt="photos of produkts">
                 <div class="product-descreption">
                 <h2>Tee
                     <select name="sizes">
@@ -766,25 +769,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
         <li><a href="about.html">Om oss</a></li>
         <li><a href="login.html">Inloggning</a></li>
         <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

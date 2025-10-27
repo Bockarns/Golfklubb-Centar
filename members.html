@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medlemmar</title>
+  <title>Medlemmar | Tillsammans! Tävla, spela, ha kul och njut</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/members.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Golfklubb Centar, Medlemmar, Bli Medlem, Tävla, Njut och ha kul Tillsammans, Webbshop, Restaurang">
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -20,8 +22,8 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
@@ -39,12 +41,12 @@
           </ul>
         </li>     
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#.html">Om klubben▾</a>
           <ul class="sub-nav">
             <li><a href="about.html">Om oss</a></li>
             <li><a href="facilities.html">Banan och Facilititer</a></li>
-            <li><a href="members.html">Medlemskap</a></li>
+            <li class="current"><a href="members.html">Medlemskap</a></li>
           </ul>
         </li>
         <li><a href="contact.html">Kontakta oss</a></li>
@@ -52,18 +54,18 @@
       </ul>
     </nav>
   </header>
-
   <section class="banner">
     <div class="banner-text">
       <h1>Medlemskap</h1>
-      <h2>Bli en del av vår golfgemenskap</h2>
+      <h2>Spela, Tävla, Njut och ha kul Tillsammans</h2>
+      <h3>Bli en del av vår golfgemenskap</h3>
     </div>
   </section>
 
   <main class="members-wrapper">
     <aside class="members-aside aside-left">
       <div>
-        <h2>Fördelar med medlemskap</h2>
+        <h3>Fördelar med medlemskap</h3>
         <ul>
           <li>Fri tillgång till golfbanan under öppettider</li>
           <li>Rabatter i restaurangen och shoppen</li>
@@ -72,42 +74,42 @@
           <li>Sociala aktiviteter och nätverksmöjligheter</li>
         </ul>
       </div>
-      <div>
-        <h2>Registrera dig idag</h2>
-        <p>Få 15% rabatt om du registrerar dig innan den 17/11. Uppge TUC som rabattkod!</p>
-        <a href="contact.html" class="btn">Bli medlem</a>
+      <div class="createaccount-box">
+        <h3>Registrera dig idag</h3>
+        <p>Få <span class="bold">15% rabatt</span> om du registrerar dig innan den <span class="bold">17/11.</span>Uppge TUC som rabattkod!</p>
+        <a href="createaccount.html" class="btn">Bli medlem</a>
       </div>
 
     </aside>
     <section class="members-container">
       <div class="members-grid">
         <div class="member-type">
-          <img src="./bilder/bronzemember.png" alt="Brons medlemskap icon" class="member-icon">
-          <h2>Bas Medlemskap</h2>
-          <p>Få tillgång till våra bas faciliteter och möjlighet att kvalificera sig till tävlingar. Inkluderar 5% rabatter i restaurangen och shoppen.</p>
-          <p><strong>Pris:</strong> 1500 SEK/år</p>
+          <img src="./bilder/member/bronzemember.png" alt="Brons medlemskap icon" class="member-icon">
+          <h3>Bas Medlemskap</h3>
+          <p>Få tillgång till våra bas faciliteter och möjlighet att kvalificera sig till tävlingar. Inkluderar <span class="bold">5% rabatter</span> i restaurangen och shoppen.</p>
+          <p class="member-price"><span class="bold">Pris:</span> 1500 SEK/år</p>
         </div>
         <div class="member-type">
-          <img src="./bilder/silvermember.png" alt="Silver medlemskap icon" class="member-icon">
-          <h2>Standard Medlemskap</h2>
-          <p>För golfare som vill njuta av vår bana och delta i klubbens aktiviteter, ni får även tillgång till träningslokaler. Inkluderar 10% rabatter i restaurangen och shoppen.</p>
-          <p><strong>Pris:</strong> 3000 SEK/år</p>
+          <img src="./bilder/member/silvermember.png" alt="Silver medlemskap icon" class="member-icon">
+          <h3>Standard Medlemskap</h3>
+          <p>För golfare som vill njuta av vår bana och delta i klubbens aktiviteter, ni får även tillgång till träningslokaler. Inkluderar <span class="bold">10% rabatter</span> i restaurangen och shoppen.</p>
+          <p class="member-price"><span class="bold">Pris:</span> 3000 SEK/år</p>
         </div>
         <div class="member-type">
-          <img src="./bilder/guldmember.png" alt="Guld medlemskap icon" class="member-icon">
-          <h2>Familje Medlemskap</h2>
+          <img src="./bilder/member/guldmember.png" alt="Guld medlemskap icon" class="member-icon">
+          <h3>Familje Medlemskap</h3>
           <p>Perfekt för familjer som vill spela tillsammans. Gäller för två vuxna och upp till tre barn under 18 år.</p>
-          <p><strong>Pris:</strong> 7000 SEK/år</p>
+          <p class="member-price"><span class="bold">Pris:</span> 7000 SEK/år</p>
         </div>
         <div class="member-type">
-          <img src="./bilder/emeraldmember.png" alt="Emerald medlemskap icon" class="member-icon">
-          <h2>Premium Medlemskap</h2>
+          <img src="./bilder/member/emeraldmember.png" alt="Emerald medlemskap icon" class="member-icon">
+          <h3>Premium Medlemskap</h3>
           <p>Få tillgång till samtliga faciliteter, träning, spa och vipbaren. Kostnadsfri Caddy om man kvalificerar sig till tävlingar.</p>
-          <p><strong>Pris:</strong> 4500 SEK/år</p>
+          <p class="member-price"><span class="bold">Pris:</span> 4500 SEK/år</p>
         </div>
         <div class="sponsorship">
-          <img src="./bilder/sponsoricon.png" alt="Sponsor icon" class="member-icon">
-          <h2>Vill du bli sponsor</h2>
+          <img src="./bilder/member/sponsoricon.png" alt="Sponsor icon" class="member-icon">
+          <h3>Vill du bli sponsor</h3>
           <p>Som företagssponsor ingår upp till 15 medlemskap baserat på vilken nivår</p>
           <p>Ni kan även välja till evenemangspaket, träningspaket/friskvård och facilitetspaket med konferenserum med mera</p>
           <p>För att bli sponsor ber vi er kontakta vårat marketing team för att skräddasy rätt paket för er</p>
@@ -116,7 +118,7 @@
     </section>
     <aside class="members-aside aside-right">
       <div class="list">
-        <h2>Frågor och svar!</h2>
+        <h3>Frågor och svar!</h3>
         <div class="accordion-menu">
           
           <div class="item" id="item1">
@@ -139,7 +141,7 @@
               <i class="icon"></i>
             </a>
             <p class="text">Absolut kan man det. Kontakta våran marknadsavdelning per mail.</p>
-            <p class="text"><a href="contact.html" class="btn">Kontakta oss</a></p>
+            <p class="text"><a href="contact.html" class="btn hidden-btn">Kontakta oss</a></p>
           </div>
           <div class="item" id="item4">
             <a href="#item4" class="title">
@@ -150,6 +152,7 @@
           </div>
         </div>
       </div>
+      </aside>
   </main>
   <footer class="footer-container">
     <div class="skapare">
@@ -172,25 +175,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
-        <li><a href="about.html">Om oss</a></li>
+        <li><a href="competition.html">Tävlingar</a></li>
+        <li><a href="event.html">Evenemang</a></li>
         <li><a href="login.html">Inloggning</a></li>
-        <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

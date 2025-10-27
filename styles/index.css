@@ -1,0 +1,138 @@
+.banner {
+  background: url('/bilder/banners/golf-ball-flag.jpg') no-repeat center center/cover;
+}
+
+.start-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 0.4fr 1fr;
+}
+
+.main-article {
+  display: flex;
+  border: 1px solid black;
+  grid-column: span 2;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Boxwhite);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main-article h2 {
+  margin-bottom: 10px;
+}
+
+.main-article p {
+  padding: 0 20%;
+  margin-bottom: 10px;
+}
+
+.welcome-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2em;
+}
+
+.news {
+  border: 1px solid black;
+  padding: 1.5em;
+  background-color: var(--Boxwhite);
+}
+
+.side-news  {
+  margin-top: 1em;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2em;
+  background-color: var(--Boxwhite);
+  align-items: center;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2em;
+  padding: 3em;
+}
+
+.news-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.news-img {
+  width: 100%;
+  justify-self: center;
+  border-radius: 8px;
+}
+
+.news-link {
+  margin-top: auto;
+}
+
+/* Screensizes */
+
+/* Extra larger screens from 1500px up */
+
+@media only screen and (min-width: 1500px) {
+  .news-grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* larger screens from 1200px up */
+
+@media only screen and (min-width: 1200px) {
+  .start-wrapper {
+    gap: 1.5em;
+  }
+ .main-article{
+    margin: 3em 3em 0 3em;
+    padding: 3em;
+  }
+
+ .news {
+    margin: 1.5em 1.5em 3em 3em ;
+  }
+
+  .news-container {
+    margin: 1.5em 3em 3em 1.5em ;
+  }
+}
+/* Medium and small screens 992px and down */
+
+@media only screen and (max-width: 992px) {
+  .start-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+/* Medium and small screens 992px and down */
+
+@media only screen and (max-width: 768px) {
+
+  .news-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+}
+
+/* Small screens 600px and down */
+
+@media only screen and (max-width: 600px) {
+ .news-grid {
+  padding: 0;
+ }
+}

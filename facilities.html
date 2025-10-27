@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banor och Faciliteter</title>
+  <title>Banor och Faciliteter | Här finns information om alla våra fastigheter och banor.</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/facilities.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Golfklubb Centar, Byggnader, Banor, Tävla, Njut och ha kul Tillsammans, Webbshop, Restaurang">
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -20,8 +22,8 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
@@ -39,11 +41,11 @@
           </ul>
         </li>     
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#.html">Om klubben▾</a>
           <ul class="sub-nav">
             <li><a href="about.html">Om oss</a></li>
-            <li><a href="facilities.html">Banan och Facilititer</a></li>
+            <li class="current"><a href="facilities.html">Banan och Facilititer</a></li>
             <li><a href="members.html">Medlemskap</a></li>
           </ul>
         </li>
@@ -52,15 +54,16 @@
       </ul>
     </nav>
   </header>
-
-<section class="facilities-banner">
-  <h1>Banor och faciliteter</h1>
+<section class="banner">
+  <div class="banner-text">
+    <h1>Banor och faciliteter</h1>
+  </div>
 </section>
 
  <section class="facility-grid">
 
   <div class="facility-box">
-    <img class="main-img" src="bilder/lobby.png" alt="Lobby">
+    <img class="main-img" src="bilder/facilities/lobby.png" alt="Lobby">
     <div class="content">
       <h2>Lobby</h2>
       <p>
@@ -68,12 +71,13 @@
         Här kan du slå dig ner med en kaffe, läsa klubbnyheter eller bara umgås i en trivsam miljö. 
         Inredningen är ljus och välkomnande med gott om plats för både avkoppling och samtal.
       </p>
-      <img class="side-img" src="bilder/sauna.jpg" alt="Lobby lounge">
+      <img class="side-img" src="bilder/facilities/sauna.jpg" alt="Lobby lounge">
     </div>
+    <a class="btn" href="./contact.html">Hitta hit</a>
   </div>
 
-  <div class="facility-box">
-    <img class="main-img" src="bilder/shop.png" alt="Shop">
+  <div class="facility-box ">
+    <img class="main-img" src="bilder/facilities/shop.png" alt="Shop">
     <div class="content">
       <h2>Shop</h2>
       <p>
@@ -81,12 +85,13 @@
         Vår personal hjälper dig gärna att välja rätt produkter för att utveckla ditt spel. 
         Shopen är också platsen att upptäcka klubbens egna kollektioner.
       </p>
-      <a href="shop.html" class="btn">Gå till shoppen</a>
+      
     </div>
+    <a href="shop.html" class="btn">Gå till shoppen</a>
   </div>
 
   <div class="facility-box">
-    <img class="main-img" src="bilder/restaurang.png" alt="Restaurang">
+    <img class="main-img" src="bilder/facilities/restaurang.png" alt="Restaurang">
     <div class="content">
       <h2>Restaurang</h2>
       <p>
@@ -94,12 +99,12 @@
         Menyn varierar efter säsong och erbjuder allt från lunch till fika och middag. 
         Utsikten över golfbanan gör måltiden till en extra upplevelse.
       </p>
-      <a href="restaurant.html" class="btn">Gå till restaurangen</a>
     </div>
+    <a href="restaurant.html" class="btn">Gå till restaurangen</a>
   </div>
 
-  <div class="facility-box">
-    <img class="main-img" src="bilder/parkbanan.jpg" alt="Parkbanan">
+  <div class="facility-box" id="courses">
+    <img class="main-img" src="bilder/facilities/parkbanan.jpg" alt="Parkbanan">
     <div class="content">
       <h2>Parkbanan</h2>
       <p>
@@ -107,22 +112,24 @@
         Passar alla nivåer men kräver strategi för att nå ett bra resultat.
       </p>
     </div>
+    <a href="./booking.html#calendar" class="btn">Boka en tid</a>
   </div>
 
   <div class="facility-box">
-    <img class="main-img" src="bilder/skogsslingan.jpg" alt="Skogsslingan">
+    <img class="main-img" src="bilder/facilities/skogsslingan.jpg" alt="Skogsslingan">
     <div class="content">
       <h2>Skogsslingan</h2>
       <p>
         En teknisk bana som slingrar sig genom tät skog. 
         Den bjuder på både stillhet och utmaningar som gör varje runda unik.
       </p>
-      <img class="side-img" src="bilder/skog.jpg" alt="Skogsmiljö">
+      <img class="side-img" src="bilder/facilities/skog.jpg" alt="Skogsmiljö">
     </div>
+    <a href="./booking.html#calendar" class="btn">Boka en tid</a>
   </div>
 
   <div class="facility-box">
-    <img class="main-img" src="bilder/linksbanan.jpg" alt="Linksbanan">
+    <img class="main-img" src="bilder/facilities/linksbanan.jpg" alt="Linksbanan">
     <div class="content">
       <h2>Linksbanan</h2>
       <p>
@@ -130,6 +137,7 @@
         Den öppna terrängen och bunkrarna gör rundan både rolig och utmanande.
       </p>
     </div>
+    <a href="./booking.html#calendar" class="btn">Boka en tid</a>
   </div>
 
 </section>
@@ -154,25 +162,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
-        <li><a href="about.html">Om oss</a></li>
+        <li><a href="competition.html">Tävlingar</a></li>
+        <li><a href="event.html">Evenemang</a></li>
         <li><a href="login.html">Inloggning</a></li>
-        <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evenemang</title>
+  <title>Evenemang | Ha kul tillsammans</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/event.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Evenemang, Event, Kommande evenemang, Ha kul tillsammans">
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -19,14 +22,14 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#">Event▾</a>
           <ul class="sub-nav">
             <li><a href="competition.html">Tävlingar</a></li>
-            <li><a href="event.html">Evenemang</a></li>
+            <li class="current"><a href="event.html">Evenemang</a></li>
           </ul>
         </li>    
         <!-- Dropdown -->
@@ -51,6 +54,251 @@
       </ul>
     </nav>
   </header>
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Evenemang</h1>
+      <h2>Ha kul tillsammans</h2>
+    </div>
+  </section>
+
+  <main class="event-wrapper">  
+    <article class="welcome">
+      <h2>Spännande evenemang</h2>
+      <p>Här finner du information angående evenemang som kommer under året. Kan vara allt möjligt, inte nödvändigtvis golfrelaterat.</p>
+      <p>Ibland vill man ha roligt utan att behöva golfa. Boka in nedstående datum i era kalendrar.</p>
+      <p>Alla är välkomna och evenemangen är kostnadsfria för alla!</p>
+    </article>
+    <section class="junior-event event-box">
+      <figure>
+      <img src="./bilder/event/children-playing.jpg" alt="Bild på Barn som leker" class="event-img hover-effect">
+      <figcaption>Bild från hoppborg evenemanget 2023</figcaption>
+      </figure>
+      <h3>Evenemang för de små</h3>
+      <p>Det är inte alla barn som alltid vill spela golf. Därför ser vi till att anordna roliga evenemang som är annorlunda.</p>
+      <input type="checkbox" name="event-toggle1" id="event-toggle1">
+      <label for="event-toggle1" class="event-btn">
+        <span class="hidden-btn btn">Kommande Evenemang</span>
+      </label>
+      <div class="dropdown-event junior-dd-event">
+        <h3>Kommande evenemang</h3>
+        <table class="event-calendar">
+          <tbody>
+          <tr>
+            <th>2026 Datum: </th>
+            <th>Evenemang:</th>
+          </tr>
+          <tr>
+            <th>24 Januari</th>
+            <td>Clowfest med clownen Voldemort!</td>
+          </tr>
+          <tr>
+            <th>7 April</th>
+            <td>Mitt i Prick med Tjorven från Saltkråkan!</td>
+          </tr>
+          <tr>
+            <th>21 Juli</th>
+            <td>Hoppborg (Sponsrat event av Ninos Betong)</td>
+          </tr>
+          <tr>
+            <th>16 Oktober</th>
+            <td>Bollhav på i lobbyn</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="event-for-all event-box">
+      <figure>
+        <img src="./bilder/event/barbeque.jpg" alt="Bild på människor vid en grill" class="event-img hover-effect">
+        <figcaption>Bild från grillningen sommaren 2024</figcaption>
+      </figure>
+      <h3>Evenemang för alla</h3>
+      <p>Ibland vill även vuxna få lite underhållning, se nedan för kommande evenemang där alla är välkomna!</p>
+      <input type="checkbox" name="event-toggle2" id="event-toggle2">
+      <label for="event-toggle2" class="event-btn">
+        <span class="hidden-btn btn">Kommande evenemang</span>
+      </label>
+      <div class="dropdown-event all-dd-event">
+      <h3>Kommande evenemang</h3>
+        <table class="event-calendar">
+          <tbody>
+          <tr>
+            <th>2026 Datum:</th>
+            <th>Evenemang:</th>
+          </tr>
+          <tr>
+            <th>19 Januari</th>
+            <td>Meet'n Greet med personalen</td>
+          </tr>
+          <tr>
+            <th>14 Feruari</th>
+            <td>💖 Alla Hjärtans Dag 💖</td>
+          </tr>
+          <tr>
+            <th>20 Juni</th>
+            <td>Midsommarafton</td>
+          </tr>
+          <tr>
+            <th>12 Juli</th>
+            <td>Grillning (Sammarbete med restaurangen)</td>
+          </tr>
+          <tr>
+            <th>3 Augusti</th>
+            <td>Grillning (Sammarbete med restaurangen)</td>
+          </tr>
+          <tr>
+            <th>31 November</th>
+            <td>🎃Halloween🎃</td>
+          </tr>
+          <tr>
+            <th>19 December</th>
+            <td>Julmarknad</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="family-event event-box">
+      <figure>
+        <img src="./bilder/event/tug-of-war.jpg" alt="Bild på barn som har dragkamp" class="event-img hover-effect">
+        <figcaption>Bild från dragkampen sommare 2025 (Barnen vann överlägset)</figcaption>
+      </figure>
+      <h3>Evenemang för familjer</h3>
+      <p>Vi anordna återkommande evenemang för hela familjen!</p>
+      <input type="checkbox" name="event-toggle3" id="event-toggle3">
+      <label for="event-toggle3" class="event-btn">
+        <span class="hidden-btn btn">Kommande evenemang</span>
+      </label>
+      <div class="dropdown-event family-dd-event">
+      <h3>Kommande evenemang</h3>
+        <table class="event-calendar">
+          <tbody>
+          <tr>
+            <th>2026 Datum:</th>
+            <th>Evenemang:</th>
+          </tr>
+          <tr>
+            <th>12 Januari</th>
+            <td>Pulkaåkning vid hål 16 på Skogsslingan</td>
+          </tr>
+          <tr>
+            <th>19 April</th>
+            <td>Skottkärre race</td>
+          </tr>
+          <tr>
+            <th>22 Juli</th>
+            <td>Dragkamp (Föräldrar mot barn)</td>
+          </tr>
+          <tr>
+            <th>6 September</th>
+            <td>Familjensdag</td>
+          </tr>
+          <tr>
+            <th>11 November</th>
+            <td>Pulkaåkning vid hål 16 på Skogsslingan</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="junior-calendar event-box">
+      <h3>Kommande evenemang</h3>
+       <table class="event-calendar">
+        <tbody>
+        <tr>
+          <th>2026 Datum: </th>
+          <th>Evenemang:</th>
+        </tr>
+        <tr>
+          <th>24 Januari</th>
+          <td>Clowfest med clownen Voldemort!</td>
+        </tr>
+        <tr>
+          <th>7 April</th>
+          <td>Mitt i Prick med Tjorven från Saltkråkan!</td>
+        </tr>
+        <tr>
+          <th>21 Juli</th>
+          <td>Hoppborg (Sponsrat event av Ninos Betong)</td>
+        </tr>
+        <tr>
+          <th>16 Oktober</th>
+          <td>Bollhav på i lobbyn</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="calendar event-box">
+      <h3>Kommande evenemang</h3>
+      <table class="event-calendar">
+        <tbody>
+        <tr>
+          <th>2026 Datum:</th>
+          <th>Evenemang:</th>
+        </tr>
+        <tr>
+          <th>19 Januari</th>
+          <td>Meet'n Greet med personalen</td>
+        </tr>
+        <tr>
+          <th>14 Feruari</th>
+          <td>💖 Alla Hjärtans Dag 💖</td>
+        </tr>
+        <tr>
+          <th>20 Juni</th>
+          <td>Midsommarafton</td>
+        </tr>
+        <tr>
+          <th>12 Juli</th>
+          <td>Grillning (Sammarbete med restaurangen)</td>
+        </tr>
+        <tr>
+          <th>3 Augusti</th>
+          <td>Grillning (Sammarbete med restaurangen)</td>
+        </tr>
+        <tr>
+          <th>31 November</th>
+          <td>🎃Halloween🎃</td>
+        </tr>
+        <tr>
+          <th>19 December</th>
+          <td>Julmarknad</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="family-calendar event-box">
+      <h3>Kommande evenemang</h3>
+      <table class="event-calendar">
+        <tbody>
+        <tr>
+          <th>2026 Datum:</th>
+          <th>Evenemang:</th>
+        </tr>
+        <tr>
+          <th>12 Januari</th>
+          <td>Pulkaåkning vid hål 16 på Skogsslingan</td>
+        </tr>
+        <tr>
+          <th>19 April</th>
+          <td>Skottkärre race</td>
+        </tr>
+        <tr>
+          <th>22 Juli</th>
+          <td>Dragkamp (Föräldrar mot barn)</td>
+        </tr>
+        <tr>
+          <th>6 September</th>
+          <td>Familjensdag</td>
+        </tr>
+        <tr>
+          <th>11 November</th>
+          <td>Pulkaåkning vid hål 16 på Skogsslingan</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
   <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
@@ -72,25 +320,16 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
         <li><a href="about.html">Om oss</a></li>
         <li><a href="login.html">Inloggning</a></li>
         <li><a href="restaurant.html">Restaurang</a></li>
-        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">

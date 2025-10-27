@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurang</title>
+  <title>Restaurang Centar | Njut tillsammans</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/restaurant.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
+  <meta name="description" lang="sv" content="Golf, Restaurang, Mat, Menyer, Njut tillsammans">
 </head>
 <body>
-  <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+  <header class="header">     
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -20,8 +22,8 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
-        <li><a href="booking.html">Boka Startid</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
+        <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
@@ -31,10 +33,10 @@
           </ul>
         </li>    
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#.html">Butik▾</a>
           <ul class="sub-nav">
-            <li><a href="restaurant.html">Restaurang</a></li>
+            <li class="current"><a href="restaurant.html">Restaurang</a></li>
             <li><a href="shop.html">Shop</a></li>
           </ul>
         </li>     
@@ -52,30 +54,32 @@
       </ul>
     </nav>
   </header>
-
    <section class="banner">
+    <div class="banner-text">
     <h1>Välkommen till Centar's Restaurang </h1>
+    <h2>Njut tillsammans</h2>
     <p>Hos oss möts god mat, trivsel och gemenskap.</p>
+    </div>
     <ul class="button">
-      <li><a href="#">BOKA BORD</a></li>
-      <li><a href="meny.html">MENY</a></li>
+      <li><a href="menu.html">MENY</a></li>      
+      <li><a href="tablebooking.html">BOKA BORD</a></li>
     </ul>
     
   </section> 
 
 <main class="grid-container">
-  <div class="up">
+  <section class="up">
     <h2>Upptäck Centar's Restaurang</h2>
     <p>Restaurangen är hjärtat i klubben! En plats där medlemmar, gäster och besökare kan samlas före eller efter rundan, eller bara njuta av en härlig måltid i en avslappnad miljö.
       Vi erbjuder allt från energigivande frukostar och lättare luncher till klassiska à la carte-rätter och smakrika huvudrätter. Vår meny är inspirerad av säsongens råvaror och lagad med omsorg för att ge dig en upplevelse av både kvalitet och smak. Oavsett om du kommer hit för en kopp kaffe, en affärslunch eller en trerätters middag vill vi att du ska känna dig som hemma.
-      <img src="./bilder/restaurant.jpg" class="welcome-img" alt="Flygbild över restaurang">
+      <img src="./bilder/restaurant/restaurant.jpg" class="welcome-img" alt="Flygbild över restaurang">
       </p>
-  </div>
-  <div class="middle-left">
+  </section>
+  <section class="middle-left">
     <h2>Veckans Frukost: 09:00 - 12:00</h2>
     <ul>
 
-      <li>Måndag:
+      <li><span class="bold">Måndag:</span>
         <ul>
           <li>Ägg & bacon</li>
           <li>Rostat bröd med smör & marmelad</li>
@@ -83,7 +87,7 @@
         </ul>
       </li>
 
-      <li>Tisdag:
+      <li><span class="bold">Tisdag:</span>
         <ul>
           <li>Yoghurt med müsli & färska bär</li>
           <li>Fullkornsbröd med ost & skinka</li>
@@ -91,7 +95,7 @@
         </ul>
       </li>
 
-      <li>Onsdag:
+      <li><span class="bold">Onsdag:</span>
         <ul>
           <li>Omelett med grönsaker & ost</li>
           <li>Surdegsbröd med avokado</li>
@@ -99,7 +103,7 @@
         </ul>
       </li>
 
-      <li>Torsdag:
+      <li><span class="bold">Torsdag:</span>
         <ul>
           <li>Havregrynsgröt med kanel & äpple</li>
           <li>Knäckebröd med kalkon & gurka</li>
@@ -107,7 +111,7 @@
         </ul>
       </li>
 
-      <li>Fredag:
+      <li><span class="bold">Fredag:</span>
         <ul>
           <li>Frukostmacka med lax & färskost</li>
           <li>Ägg i valfri stil</li>
@@ -115,7 +119,7 @@
         </ul>
       </li>
 
-      <li>Lördag:
+      <li><span class="bold">Lördag:</span>
         <ul>
           <li>Amerikanska pannkakor med lönnsirap & bär</li>
           <li>Bacon eller frukt som tillval</li>
@@ -123,7 +127,7 @@
         </ul>
       </li>
 
-      <li>Söndag:
+      <li><span class="bold">Söndag:</span>
         <ul>
           <li>Brunch-inspirerad frukostbuffé: ägg, korv, sallad, nybakat bröd, frukt & dessert</li>
           <li>Kaffe/te + juice</li>
@@ -131,47 +135,47 @@
       </li>
 
     </ul>
-  </div>
-  <div class="middle-right">
+  </section>
+  <section class="middle-right">
     <h2>Veckans lunch: 13:00 - 16:00</h2>
     <ul>
 
-      <li>Måndag:
+      <li><span class="bold">Måndag:</span>
         <ul>
           <li>Stekt laxfilé med dillstuvad potatis & citron</li>
           <li>Vegetariskt alternativ: Ratatouille med bulgur</li>
         </ul>
       </li>
 
-      <li>Tisdag:
+      <li><span class="bold">Tisdag:</span>
         <ul>
           <li>Köttbullar med gräddsås, lingon & potatispuré</li>
           <li>Vegetariskt alternativ: Linssbiffar med tzatziki</li>
         </ul>
       </li>
 
-      <li>Onsdag:
+      <li><span class="bold">Onsdag:</span>
         <ul>
           <li>Kycklingfilé med örtig sås & rostad potatis</li>
           <li>Vegetariskt alternativ: Pasta med spenat & ricotta</li>
         </ul>
       </li>
 
-      <li>Torsdag:
+      <li><span class="bold">Torsdag:</span>
         <ul>
           <li>Ärtsoppa med pannkakor, sylt & grädde (klassisk torsdag!)</li>
           <li>Vegetariskt alternativ: Krämig svampsoppa med bröd</li>
         </ul>
       </li>
 
-      <li>Fredag:
+      <li><span class="bold">Fredag:</span>
         <ul>
           <li>Grillad entrecôte med pommes frites & bearnaisesås</li>
           <li>Vegetariskt alternativ: Halloumiburgare med coleslaw</li>
         </ul>
       </li>
 
-      <li>Lördag:
+      <li><span class="bold">Lördag:</span>
         <ul>
           <li>Dagens fångst - fisk enligt säsong med tillbehör</li>
           <li>Vegetariskt alternativ: Risotto med svamp & parmesan</li>
@@ -179,7 +183,7 @@
         </ul>
       </li>
 
-      <li>Söndag:
+      <li><span class="bold">Söndag:</span>
         <ul>
           <li>Söndagsstek med rödvinssås, grönsaker & potatisgratäng</li>
           <li>Vegetariskt alternativ: Fyllda paprikor med couscous</li>
@@ -188,14 +192,28 @@
       
     </ul>
 
-    <p> Veckans lunch inkluderar ej dryck. Drycker finns att köpa separat i menyn.</p>
-  </div>
-  <div class="bottom">
-    <h2>Öppettider:</h2>
-    <p>Måndag - Torsdag:09:00 - 22:00</p>
-    <p>Fredag:09:00 - 23:00</p>
-    <p>Lördag - Söndag:10:00 - 00:00</p>
-  </div>
+    <p><span class="bold">Veckans lunch inkluderar ej dryck. Drycker finns att köpa separat i menyn.</span></p>
+  </section>
+  <section class="bottom">
+    <div class="breakfast-price">
+      <h2>Veckan's Frukost:</h2>
+      <p><span class="bold">Ordinare:</span> 170kr</p>
+      <p><span class="bold">Pensionär:</span> 155kr</p>
+      <p><span class="bold">Medlemmar:</span> 145kr</p>
+    </div>
+    <div class="open-times">
+      <h2>Restaurang's Öppettider:</h2>
+      <p><span class="bold">Månad - Torsdag: </span>09:00 - 22:00</p>
+      <p><span class="bold">Fredag: </span>09:00 - 23:00</p>
+      <p><span class="bold">Lördag - Söndag: </span>10:00 - 00:00</p>
+    </div>
+    <div class="lunch-price">
+      <h2>Veckan's Lunch:</h2>
+      <p><span class="bold">Ordinare:</span> 230kr</p>
+      <p><span class="bold">Pensionär:</span> 200kr</p>
+      <p><span class="bold">Medlemmar:</span> 175kr</p>
+    </div>
+  </section>
 
 </main>
   <footer class="footer-container">
@@ -219,24 +237,15 @@
             Saimonas Klietkus
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
-            Ahmad Farzat
-          </a>
-        </li>
       </ul>
     </div>
     <div class="snabba-links">
       <h2>Snabblänkar</h2>
       <ul>
-        <li>
-          <a href="booking.html">Boka Startid</a>
-        </li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="members.html">Medlemskap</a></li>
         <li><a href="about.html">Om oss</a></li>
         <li><a href="login.html">Inloggning</a></li>
-        <li><a href="restaurant.html">Restaurang</a></li>
         <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
